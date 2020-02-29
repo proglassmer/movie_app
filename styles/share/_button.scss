@@ -1,0 +1,53 @@
+button {
+  border-radius: 20px;
+  padding: 8px 20px;
+  &:hover {
+    opacity: 0.8;
+  }
+  &.white-btn {
+    background-color: white;
+    color: $main-color;
+  }
+  &.fb-btn {
+    background-color: #1877F2;
+    color: white;
+  }
+  &.border-white-btn {
+    background-color: white;
+    color: $main-color;
+    border: 1px solid #CCCCCC;
+  }
+  &.main-btn {
+    background-color: $main-color;
+    color: white;
+  }
+  &.main-border-btn {
+    background-color: white;
+    border: 1px solid $main-color;
+    color: $main-color;
+  }
+  &.yellow-btn {
+    background-color: #F9CA35;
+    color: white;
+  }
+}
+
+.small-btn {
+  padding: 3px 20px;
+}
+
+.btn-inline {
+  input {
+    border-radius: 5px;
+    height: auto;
+  }
+
+  .input-group-prepend {
+    button {
+      border-top-right-radius: 5px !important;
+      border-bottom-right-radius: 5px !important;
+    }
+  }
+}
+
+

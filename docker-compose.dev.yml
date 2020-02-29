@@ -1,0 +1,14 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: ./dockers/app/Dockerfile
+    container_name: tol_frontend_app
+    restart: always
+    env_file:
+      - ./.env
+    ports:
+      - ${PORT}:${PORT}
+    volumes:
+      - /var/log/pm2/logs:/root/.pm2/logs/

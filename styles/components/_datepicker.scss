@@ -1,0 +1,56 @@
+.my-datepicker {
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.16);
+  border: none;
+  .react-datepicker__header {
+    background-color: $main-color;
+    .react-datepicker__day-name,
+    .react-datepicker__current-month {
+      color: white;
+    }
+    .react-datepicker__current-month {
+      display: none; //fix date picker style
+    }
+  }
+  .react-datepicker__month-select ,
+  .react-datepicker__year-select {
+    background: transparent;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 0.944rem;
+  }
+  .react-datepicker__navigation--previous {
+    border-right-color: white;
+    display: none; //fix date picker style
+  }
+  .react-datepicker__navigation--next {
+    border-left-color: white;
+    display: none; //fix date picker style
+  }
+  .react-datepicker__day--today {
+    background-color: white;
+    border-radius: 0.3rem;
+    color: black;
+    border: 1px solid $main-color
+  }
+
+  .react-datepicker__day--selected {
+    background-color: $main-color;
+    border-radius: 0.3rem;
+    color: white;
+  }
+}
+.react-datepicker-wrapper {
+  width: 100%;
+  :before {
+    content: url('/images/icon/calendar_icon.png');
+    position: absolute;
+    left: 10px;
+    top: 8px;
+  }
+  input {
+    padding-left: 35px;
+  }
+}

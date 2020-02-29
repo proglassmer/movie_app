@@ -1,0 +1,32 @@
+.my-select,
+.select-filter {
+  font-size: 0.8rem;
+  .react-select__control {
+    border-radius: 20px;
+  }
+  span {
+    display: none;
+  }
+  svg {
+    color: $main-color;
+  }
+}
+
+.my-select {
+  .react-select__control {
+    border: 1px solid #E3E3E3;
+    -webkit-box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.11);
+    -moz-box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.11);
+    box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.11);
+  }
+}
+
+.select-filter {
+  .react-select__control {
+    border: 2px solid $main-color;
+    height: 30px;
+    min-height: 30px;
+    align-content: center;
+    font-family: 'kanit-light';
+  }
+}

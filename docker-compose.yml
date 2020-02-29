@@ -1,0 +1,12 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: ./dockers/app/Dockerfile
+    container_name: movie_front_end_app
+    restart: always
+    env_file:
+      - ./.env
+    ports:
+      - ${PORT}:${PORT}

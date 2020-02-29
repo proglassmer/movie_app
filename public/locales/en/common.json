@@ -1,0 +1,66 @@
+{
+	"default": {
+		"insurance": "insurance",
+		"sign_in": "Register",
+		"email": "Email",
+		"password": "Password",
+		"submit_login": "Submit",
+		"register": "Register",
+		"car_insurance": "ประกันภัยรถยนต์",
+		"motercycle_insurance": "ประกันภัยรถมอเตอร์ไซต์",
+		"brand": "Brand",
+		"car_model": "Model",
+		"year": "Year",
+		"category": "Category",
+		"check_premium": "เช็คเบี้ย",
+		"insured_information": "Insured information",
+		"first_name": "First name",
+		"last_name": "Last name",
+		"idcard_number": "ID card number",
+		"date_of_birth": "Birth",
+		"tel": "Tel",
+		"sex": "Sex",
+		"occupation": "Occupation",
+		"province": "Province",
+		"district": "District",
+		"sub_district": "SubDistrict",
+		"zip_code": "Zip code",
+		"car_information": "Car Information",
+		"car_code": "Code",
+		"license_plate_no": "License Plate No.",
+		"plate_register_province": "Register Province",
+		"engine_no": "Engine No.",
+		"chassis_no": "Chassis No.",
+		"start_date_insure": "Start date insure"
+	},
+	"menu": {
+		"insurance": "Insurance",
+		"promotion": "Promotion",
+		"news": "News",
+		"about_us": "About us",
+		"contact_us": "Contact us",
+		"for_agent": "Agent",
+		"login": "Login",
+		"call_center": "Call center"
+	},
+	"modal": {
+		"register": "Register",
+		"confirm_password": "Confirmm Password",
+		"notice_forgot_password": "ลืมรหัสผ่าน?",
+		"notice_password": "(อังกฤษตัวพิมพ์ใหญ่, ตัวพิมพ์เล็ก และตัวเลขอย่างน้อย 1 ตัว)",
+		"want_to_signup": "ยังไม่เคยสมัครสมาชิก?",
+		"already_signup": "เป็นสมาชิกแล้ว?",
+		"login": "เข้าสู่ระบบ",
+		"forgot_password": "ลืมรหัสผ่าน",
+		"send_email_text": "ระบบจะส่งอีเมลไปให้คุณเพื่อตั้งค่ารหัสใหม่",
+		"confirm_submit": "ยืนยันข้อมูล"
+	},
+	"error_message": {
+		"wrong_username": "Username or Password incorrect"
+	},
+	"validates": {
+		"required": "This field is required",
+		"email": "Invalid email",
+		"your_id_card_incorrect": "Invalid ID Card"
+	}
+}

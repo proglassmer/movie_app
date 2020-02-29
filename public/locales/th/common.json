@@ -1,0 +1,66 @@
+{
+	"default": {
+		"insurance": "ประกัน",
+		"sign_in": "เข้าสู่ระบบ",
+		"email": "อีเมล",
+		"password": "รหัสผ่าน",
+		"submit_login": "เข้าสู่ระบบ",
+		"register": "ลงทะเบียน",
+		"car_insurance": "ประกันภัยรถยนต์",
+		"motercycle_insurance": "ประกันภัยรถมอเตอร์ไซต์",
+		"brand": "ยี่ห้อ",
+		"car_model": "รุ่น",
+		"year": "ปี",
+		"category": "ประเภท",
+		"check_premium": "เช็คเบี้ย",
+		"insured_information": "ข้อมูลผู้เอาประกัน",
+		"first_name": "ชื่อ",
+		"last_name": "นามสกุล",
+		"idcard_number": "เลขบัตรประชาชน",
+		"date_of_birth": "วันเกิด",
+		"tel": "เบอร์โทรศัพท์",
+		"sex": "เพศ",
+		"occupation": "อาชีพ",
+		"province": "จังหวัด",
+		"district": "เขต",
+		"sub_district": "แขวง",
+		"zip_code": "รหัสไปรษณีย์",
+		"car_information": "ข้อมูลรถยนต์",
+		"car_code": "รหัส",
+		"license_plate_no": "ทะเบียนรถ",
+		"plate_register_province": "จังหวัดทะเบียนรถ",
+		"engine_no": "เลขเครื่องยนต์",
+		"chassis_no": "หมายเลขตัวถัง",
+		"start_date_insure": "วันเริ่มต้นประกัน"
+	},
+	"menu": {
+		"insurance": "ประกัน",
+		"promotion": "โปรโมชั่น",
+		"news": "ข่าวสาร",
+		"about_us": "รู้จักเรา",
+		"contact_us": "ติดต่อเรา",
+		"for_agent": "สำหรับตัวแทน",
+		"login": "เข้าสู่ระบบ",
+		"call_center": "Call center"
+	},
+	"modal": {
+		"register": "สมัครสมาชิก",
+		"confirm_password": "ยืนยันรหัสผ่าน",
+		"notice_forgot_password": "ลืมรหัสผ่าน?",
+		"notice_password": "(อังกฤษตัวพิมพ์ใหญ่, ตัวพิมพ์เล็ก และตัวเลขอย่างน้อย 1 ตัว)",
+		"want_to_signup" : "ยังไม่เคยสมัครสมาชิก?",
+		"already_signup": "เป็นสมาชิกแล้ว?",
+		"login": "เข้าสู่ระบบ",
+		"forgot_password": "ลืมรหัสผ่าน",
+		"send_email_text": "ระบบจะส่งอีเมลไปให้คุณเพื่อตั้งค่ารหัสใหม่",
+		"confirm_submit": "ยืนยันข้อมูล"
+	},
+	"error_message": {
+		"wrong_username": "รหัสผู้ใช้งาน หรือ รหัสผ่าน ไม่ถูกต้อง"
+	},
+	"validates": {
+		"required": "กรุณากรอกข้อมูล",
+		"email": "ข้อมูลอีเมล์ผิดพลาด",
+		"your_id_card_incorrect": "รหัสบัตรประชาชนผิดพลาด"
+	}
+}
