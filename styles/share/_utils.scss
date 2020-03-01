@@ -8,7 +8,6 @@
   background-color: $grey-color;
 }
 
-
 .brake-line {
   width: 100%;
 }
@@ -47,14 +46,9 @@
   position: relative;
 }
 
-.fontawesome {
-  &:after,
-  &:before {
-    font-weight: 900;
-    font-family: "Font Awesome 5 Free"; 
-  }
-}
-
 .pointer {
   cursor: pointer;
+}
+.border-l-white {
+  border-left: 1px solid;
 }

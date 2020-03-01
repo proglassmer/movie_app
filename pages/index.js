@@ -19,6 +19,12 @@ class Index extends React.Component {
 		}
 	}
 
+	_renderInterestContent() {
+		return (
+			<p> ยังคิดไม่ออก </p>
+		)
+	}
+
 	render() {
 		const { t } = this.props
 		return (
@@ -26,8 +32,12 @@ class Index extends React.Component {
 				<BannerSlider />
 				<div className="my-3">
 					<div className="row">
-						<div className="col-12 col-md-9"> list </div>
-						<div className="col-12 col-md-3"> 
+						<div className="col-12 col-md-9"> 
+							<div className="content">
+								{this._renderInterestContent()}
+							</div>
+						</div>
+						<div className="col-12 col-md-3 border-l-white"> 
 							<FilterBox />
 						</div>
 					</div>
