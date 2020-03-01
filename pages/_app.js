@@ -44,9 +44,7 @@ class MyApp extends NextApp {
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
           <link rel="shortcut icon" href="/images/logo-header.png" />
         </Head>
-        {(
-          router.pathname != '/login' && <Header />
-        )}
+        <Header />
         <div className="wrapper-content">
           {pageProps.error && pageProps.error.status ? (
             <MyError error={pageProps.error} />
@@ -54,9 +52,7 @@ class MyApp extends NextApp {
             <Component {...pageProps} />
           )}
         </div>
-        {(
-          router.pathname != '/login' && <Footer />
-        )}
+        <Footer />
       </Provider>
     )
   }

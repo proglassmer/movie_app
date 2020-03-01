@@ -12,9 +12,6 @@ import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem ,Collapse,
 // routes
 import { Router, Link } from '../routes'
 
-// component
-import DefaultModal from './modal/DefaultModal'
-
 // i18n
 import { i18n, withTranslation } from '../../i18n'
 import Storage from '../../lib/Storage'

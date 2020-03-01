@@ -1,0 +1,17 @@
+.banner-slider {
+  max-height: $height-banner-slider;
+  height: $height-banner-slider;
+  width: 90%;
+  margin: 15px auto;
+  img {
+    max-height: $height-banner-slider;
+    height: $height-banner-slider;
+    width: 100%;
+    -webkit-box-shadow: 0px 0px 8px 0.5px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 8px 0.5px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 8px 0.5px rgba(0,0,0,0.5);
+  }
+  .slick-slide {
+    padding: 0px 15px;
+  }
+}
