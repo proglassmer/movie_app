@@ -35,6 +35,7 @@ class BannerSlider extends React.Component {
     var settings = {
       dots: true,
       infinite: true,
+      autoplay: true,
       speed: 500,
       arrows: false,
       slidesToShow: 2,

@@ -2,7 +2,7 @@
   max-height: $height-banner-slider;
   height: $height-banner-slider;
   width: 90%;
-  margin: 15px auto;
+  margin: 15px auto 60px auto;
   img {
     max-height: $height-banner-slider;
     height: $height-banner-slider;
@@ -13,5 +13,13 @@
   }
   .slick-slide {
     padding: 0px 15px;
+  }
+  .slick-dots {  
+    li button:before {
+      color: #869791;
+    }
+    li.slick-active button:before {
+      color: white;
+    }
   }
 }

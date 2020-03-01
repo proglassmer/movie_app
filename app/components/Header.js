@@ -158,8 +158,8 @@ class Header extends React.Component {
 						</li>
 					</ul>
 					<div className="search-box">
-						<input type="text" class="textbox" placeholder="Search" />
-						<input title="Search" value="" type="submit" class="button"/>
+						<input type="text" className="textbox" placeholder="Search" />
+						<input title="Search" value="" type="submit" className="button"/>
 					</div>
 				</nav>
 			</div>

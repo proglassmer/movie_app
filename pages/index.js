@@ -6,6 +6,7 @@ import { connect } from 'react-redux'
 import { withTranslation } from '../i18n'
 
 import BannerSlider from './../app/components/BannerSlider'
+import FilterBox from './../app/components/FilterBox'
 
 class Index extends React.Component {
 	static async getInitialProps({ store }) {
@@ -23,6 +24,14 @@ class Index extends React.Component {
 		return (
 			<div className="home-page" style={{minHeight: "500px"}} >
 				<BannerSlider />
+				<div className="my-3">
+					<div className="row">
+						<div className="col-12 col-md-8"> list </div>
+						<div className="col-12 col-md-4"> 
+							<FilterBox />
+						</div>
+					</div>
+				</div>
 			</div>
 		)
 	}
