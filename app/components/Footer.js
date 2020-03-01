@@ -54,7 +54,7 @@ class Footer extends React.Component {
                 <p className="align-items-center"> <span className="email-icon mr-1"></span> info@autosmart.com </p>
               </div>
               <div className="col-12 col-sm-4 col-md-1 mb-md-0 mb-3 qr-img-box">
-                <img src="/images/qr.png" className="img-fluid qr-pic" />
+                {/* <img src="/images/qr.png" className="img-fluid qr-pic" /> */}
               </div>
             </div>
             <div className="footer-copyright text-center text-md-left py-3">2019 © Auto Smart Broker Solution. All Rights Reserved.</div>
