@@ -26,8 +26,8 @@ class Index extends React.Component {
 				<BannerSlider />
 				<div className="my-3">
 					<div className="row">
-						<div className="col-12 col-md-8"> list </div>
-						<div className="col-12 col-md-4"> 
+						<div className="col-12 col-md-9"> list </div>
+						<div className="col-12 col-md-3"> 
 							<FilterBox />
 						</div>
 					</div>

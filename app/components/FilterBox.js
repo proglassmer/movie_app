@@ -86,13 +86,11 @@ class FilterBox extends React.Component {
 				<div className="category-type-box">
 					<ul>
 						<li> 
-							<span> หมวดหมู่ </span> 
-							<ul>
-								{
-									mock_list_category.map((data,key) => (
-										<li key={key}> {data.name} </li>
-									))
-								}
+							<span className="head"> หมวดหมู่ </span> 
+							<ul className="sub">
+								{mock_list_category.map((data,key) => (
+									<li key={key}> {data.name} <span className="amount"> {data.amount} </span> </li>
+								))}
 							</ul>
 						</li>
 					</ul>
