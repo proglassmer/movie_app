@@ -35,7 +35,8 @@ class MyApp extends NextApp {
   }
 
   render() {
-    const { Component, pageProps, store } = this.props
+    const { Component, pageProps, store, router } = this.props
+    console.log(router)
     return (
       <Provider store={store}>
         <Head>
@@ -43,7 +44,9 @@ class MyApp extends NextApp {
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
           <link rel="shortcut icon" href="/images/logo-header.png" />
         </Head>
-        <Header />
+        {(
+          router.pathname != '/login' && <Header />
+        )}
         <div className="wrapper-content">
           {pageProps.error && pageProps.error.status ? (
             <MyError error={pageProps.error} />
@@ -51,7 +54,9 @@ class MyApp extends NextApp {
             <Component {...pageProps} />
           )}
         </div>
-        <Footer />
+        {(
+          router.pathname != '/login' && <Footer />
+        )}
       </Provider>
     )
   }

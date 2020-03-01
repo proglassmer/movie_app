@@ -20,6 +20,7 @@ class Index extends React.Component {
 		const { t } = this.props
 		return (
 			<div className="home-page" style={{minHeight: "500px"}} >
+				
 			</div>
 		)
 	}

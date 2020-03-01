@@ -116,66 +116,50 @@ class Header extends React.Component {
 		const { isOpenMenu } = this.state
 		return (
 			<div className="header">
-				<DefaultModal type={this.state.modalType} show={this.state.isToggleModal} handleClose={this.toggleModal}
-					switchModal={this.switchModal}/>
-
-				<nav className="container navbar navbar-expand-lg">
-					<button className="navbar-toggler hamburger" type="button" onClick={this.openMenu}>
-						<i className="fa fa-bars" aria-hidden="true"></i>
-					</button>
-					<Link route="root">
-						<a> <div className="logo"></div></a>
-					</Link>	
-					<div className="top-menu">
-						<Collapse isOpen={isOpenMenu} navbar>
-							<ul className="left-menu align-items-center">
-								<li className="nav-item active" onClick={this.closeMenu}>
-									<Link route="package">
-										<a> {t('menu.insurance')} </a>
-									</Link>
-								</li>
-								<li className="nav-item" onClick={this.closeMenu}>
-									<Link route="promotion">
-										<a> {t('menu.promotion')} </a>
-									</Link>
-								</li>
-								<li className="nav-item" onClick={this.closeMenu}>
-									<Link route="news">
-										<a> {t('menu.news')} </a>
-									</Link>
-								</li>
-								<li className="nav-item" onClick={this.closeMenu}>
-									<Link route="root">
-										<a> {t('menu.about_us')} </a>
-									</Link>
-								</li>
-								<li className="nav-item" onClick={this.closeMenu}>
-									<Link route="root">
-										<a> {t('menu.contact_us')} </a>
-									</Link>
-								</li>
-							</ul>
-						</Collapse>
-						<ul className="right-menu align-items-center">
-							<li className={(isOpenMenu) ? '' : 'd-none' } >
-								<button className="white-btn">
-									{t('menu.for_agent')}
-								</button>
-							</li>
-							<li className="nav-item">
-								{(mock_auth) ? 
-									this._renderAvatarUser()
-								: 
-								<div role="button" data-type="login" onClick={this.openModal}>
-									{t('menu.login')} 
-								</div>
-								}
-							</li>
-							<li className="nav-item call-center text-right">
-								<span> {t('menu.call_center')} </span>
-								<p className="m-0"> 02-2093303 </p>
-							</li>
-						</ul>
+				<nav>
+					<div className="logo">
+						<p> MOVIE WEB APP </p>
+					</div>
+					<ul className="menu">
+						<li>
+							<Link route="root">
+								<a> หน้าแรก </a>
+							</Link>
+						</li>
+						<li>
+							<Link route="root">
+								<a> การ์ตูน </a>
+							</Link>
+						</li>
+						<li>
+							<Link route="root">
+								<a> หนังฝรั่ง </a>
+							</Link>
+						</li>
+						<li>
+							<Link route="root">
+								<a> หนังไทย </a>
+							</Link>
+						</li>
+						<li>
+							<Link route="root">
+								<a> หนังจีน </a>
+							</Link>
+						</li>
+						<li>
+							<Link route="root">
+								<a> หนังญี่ปุ่น </a>
+							</Link>
+						</li>
+						<li>
+							<Link route="root">
+								<a> หนังเกาหลี </a>
+							</Link>
+						</li>
+					</ul>
+					<div className="search-box">
+						<input type="text" class="textbox" placeholder="Search" />
+						<input title="Search" value="" type="submit" class="button"/>
 					</div>
 				</nav>
 			</div>
