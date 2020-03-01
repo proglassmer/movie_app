@@ -1,0 +1,17 @@
+.movie-item {
+  padding-right: 20px;
+  .picture-movie {
+
+  }
+  .detail-movie {
+    h3 {
+      font-size: 1rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    p {
+      font-size: 0.7rem;
+    }
+  }
+}

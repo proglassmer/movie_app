@@ -36,7 +36,6 @@ class MyApp extends NextApp {
 
   render() {
     const { Component, pageProps, store, router } = this.props
-    console.log(router)
     return (
       <Provider store={store}>
         <Head>

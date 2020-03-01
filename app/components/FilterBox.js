@@ -80,7 +80,6 @@ class FilterBox extends React.Component {
 				amount: 3
 			}
 		]
-		console.log(mock_list_category)
 		return (
 			<div className="filter-box">
 				<div className="category-type-box">
