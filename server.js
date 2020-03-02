@@ -14,3 +14,7 @@ app.prepare().then(() => {
   server.use(handle).listen(port)
   console.log(`> Ready on http://localhost:${port}`) // eslint-disable-line no-console
 })
+
+const handler = routes.getRequestHandler(app, ({req, res, route, query}) => {
+  app.render(req, res, route.page, query)
+})
