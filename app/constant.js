@@ -6,7 +6,7 @@ export const slickListMovie = {
 	slidesToScroll: 1,
 	arrows: false,
 	lazyLoad: true,
-	autoplay: true,
+	autoplay: false,
 	draggable: true,
 	responsive: [
 		{
@@ -19,4 +19,9 @@ export const slickListMovie = {
 			}
     }
   ]
+}
+
+export const qualityMovie = {
+	'hd': 'HD',
+	'zoom': 'ZOOM',
 }

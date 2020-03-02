@@ -1,14 +1,4 @@
 import React from 'react'
-import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem ,Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  NavbarText } from 'reactstrap'
-
 // routes
 import { Router, Link } from '../routes'
 
@@ -18,6 +8,7 @@ import DefaultModal from './modal/DefaultModal'
 // i18n
 import { i18n, withTranslation } from '../../i18n'
 import Storage from '../../lib/Storage'
+import { qualityMovie } from './../constant'
 
 class MovieItem extends React.Component {
 	static async getInitialProps({ store }) {
@@ -34,7 +25,9 @@ class MovieItem extends React.Component {
 		const { t, detail } = this.props
 		return (
 			<div className="movie-item">
+				<div className={"tag-movie tag-"+detail.quality }> {qualityMovie[detail.quality]} </div>
 				<div className="picture-movie">
+					<div class="video-play-button"></div>
 					<img src={detail.img_url} className="img-fluid" />
 				</div>
 				<div className="detail-movie">
