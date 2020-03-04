@@ -38,7 +38,7 @@ class BannerSlider extends React.Component {
       autoplay: true,
       speed: 500,
       arrows: false,
-      slidesToShow: 3,
+      slidesToShow: 1,
       slidesToScroll: 1,
       responsive: [
         {
@@ -54,13 +54,15 @@ class BannerSlider extends React.Component {
     };
 		return (
 			<div className="banner-slider">
-        <Slider {...settings}>
-          <div> <img src="/images/example/slider/banner-1.jpg" className="img-fluid" /> </div>
-          <div> <img src="/images/example/slider/banner-1.jpg" className="img-fluid" /> </div>
-          <div> <img src="/images/example/slider/banner-1.jpg" className="img-fluid" /> </div>
-          <div> <img src="/images/example/slider/banner-1.jpg" className="img-fluid" /> </div>
-          <div> <img src="/images/example/slider/banner-1.jpg" className="img-fluid" /> </div>
-        </Slider>
+        <div> <img src="/images/example/slider/banner3.jpg" className="img-fluid" /> </div>
+        <div className="shadow-background"></div>
+        {/* <Slider {...settings}>
+          <div> <img src="/images/example/slider/banner1.jpg" className="img-fluid" /> </div>
+          <div> <img src="/images/example/slider/banner2.jpg" className="img-fluid" /> </div>
+          <div> <img src="/images/example/slider/banner3.jpg" className="img-fluid" /> </div>
+          <div> <img src="/images/example/slider/banner4.jpg" className="img-fluid" /> </div>
+          <div> <img src="/images/example/slider/banner5.jpg" className="img-fluid" /> </div>
+        </Slider> */}
 			</div>
 		)
 	}

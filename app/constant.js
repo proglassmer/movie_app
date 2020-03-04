@@ -7,7 +7,7 @@ export const slickListMovie = {
 	arrows: false,
 	lazyLoad: true,
 	autoplay: false,
-	draggable: true,
+	draggable: false,
 	responsive: [
 		{
 			breakpoint: 766.98,

@@ -177,15 +177,15 @@ class Index extends React.Component {
 				<BannerSlider />
 				<div className="my-5">
 					<div className="row">
-						<div className="col-12 col-md-9"> 
+						<div className="col-12 col-md-12"> 
 							<div className="content">
 								{this._renderInterestContent()}
 								{this._renderNewContent()}
 							</div>
 						</div>
-						<div className="col-12 col-md-3 border-l-white"> 
-							<FilterBox />
-						</div>
+						{/* <div className="col-12 col-md-3 border-l-white">  */}
+							{/* <FilterBox /> */}
+						{/* </div> */}
 					</div>
 				</div>
 			</div>
