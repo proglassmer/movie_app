@@ -26,11 +26,14 @@
   }
 }
 .movie-item {
-  padding-right: 20px;
+  padding: 0px 20px;
   position: relative;
   cursor: pointer;
   .picture-movie {
     position: relative;
+    img {
+      width: 100%;
+    }
   }
   .detail-movie {
     h3 {
@@ -46,7 +49,6 @@
   &:hover {
     .picture-movie {
       &:before {
-
       }
       &:after {
         content:'\A';

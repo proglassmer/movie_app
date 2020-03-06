@@ -180,6 +180,7 @@ class Index extends React.Component {
 						<div className="col-12 col-md-12"> 
 							<div className="content">
 								{this._renderInterestContent()}
+								
 								{this._renderNewContent()}
 							</div>
 						</div>

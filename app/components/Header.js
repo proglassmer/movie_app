@@ -26,12 +26,13 @@ class Header extends React.Component {
 
 	constructor(props) {
 		super(props)
-		
 		this.state = {
 			isToggleModal: false,
 			modalType: "",
 			isSettingDropdown: false,
-			isOpenMenu: false
+			isOpenMenu: false,
+			size_screen: '',
+			isHeaderDark: false
 		}
 		this.toggleModal = this.toggleModal.bind(this)
 		this.openModal = this.openModal.bind(this)
@@ -39,7 +40,37 @@ class Header extends React.Component {
 		this.toggleSettingUser = this.toggleSettingUser.bind(this)
 		this.openMenu = this.openMenu.bind(this)
 		this.closeMenu = this.closeMenu.bind(this)
-  }
+	}
+	
+	componentDidMount() {
+		window.addEventListener('scroll', this.updateHeaderDark.bind(this));
+		// window.addEventListener("resize", this.resize.bind(this));
+		// this.resize();
+		this.updateHeaderDark();
+	}
+
+	updateHeaderDark() {
+		if(window.scrollY > 150) {
+			this.setState({
+				isHeaderDark: true
+			})
+		} else {
+			this.setState({
+				isHeaderDark: false
+			})
+		}
+	}
+
+	componentWillUnmount() {
+    window.removeEventListener('scroll', this.updateHeaderDark);
+	}
+
+	// resize() {
+	// 	this.setState({
+	// 		size_screen: window.innerWidth
+	// 	})
+	// 		// this.setState({hideNav: window.innerWidth <= 760});
+	// }
 
 	openMenu() {
 		this.setState({
@@ -113,12 +144,12 @@ class Header extends React.Component {
     const _token = Storage.getCookie('_token')
     const mock_auth = true
 		const { t, i18n } = this.props
-		const { isOpenMenu } = this.state
+		const { isOpenMenu, isHeaderDark } = this.state
 		return (
-			<div className="header">
+			<div className={"header " + ((isHeaderDark) ? 'header-dark' : '')}>
 				<nav>
 					<div className="logo">
-						<p> MOVIE WEB APP </p>
+						{/* <p> MOVIE WEB APP </p> */}
 					</div>
 					<ul className="menu">
 						<li>
