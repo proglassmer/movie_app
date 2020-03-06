@@ -4,5 +4,7 @@ routes
   .add('root', '/', 'index')
   .add('login', '/login', 'login')
   .add('movie', '/movie/:title', 'movie')
+  .add('category', '/:category', 'category')
+  .add('type', '/:type', 'type')
 
 

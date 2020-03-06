@@ -23,14 +23,16 @@ class MovieItem extends React.Component {
 		return (
 			<Link route='movie' params={{title: detail.title}}>
 				<div className="movie-item">
-					<div className={"tag-movie tag-"+detail.quality }> {qualityMovie[detail.quality]} </div>
 					<div className="picture-movie">
 						<div class="video-play-button"></div>
 						<img src={detail.img_url} className="img-fluid" />
 					</div>
 					<div className="detail-movie">
 						<h3> { detail.title }</h3>
-						<p> { detail.year } </p>
+						<div class="d-flex align-items-center">
+							<div className={"tag-movie tag-"+detail.quality }> {qualityMovie[detail.quality]} </div>
+							<p className="my-0 ml-2"> { detail.year } </p>
+						</div>
 					</div>
 				</div>
 			</Link>

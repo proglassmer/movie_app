@@ -1,13 +1,5 @@
 import React from 'react'
-import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem ,Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  NavbarText } from 'reactstrap'
+import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
 
 // routes
 import { Router, Link } from '../routes'
@@ -32,7 +24,8 @@ class Header extends React.Component {
 			isSettingDropdown: false,
 			isOpenMenu: false,
 			size_screen: '',
-			isHeaderDark: false
+			isHeaderDark: false,
+			isOpenToggleCategory: false
 		}
 		this.toggleModal = this.toggleModal.bind(this)
 		this.openModal = this.openModal.bind(this)
@@ -40,6 +33,7 @@ class Header extends React.Component {
 		this.toggleSettingUser = this.toggleSettingUser.bind(this)
 		this.openMenu = this.openMenu.bind(this)
 		this.closeMenu = this.closeMenu.bind(this)
+		this.toggleCategory = this.toggleCategory.bind(this)
 	}
 	
 	componentDidMount() {
@@ -140,11 +134,17 @@ class Header extends React.Component {
 		)
 	}
 
+	toggleCategory() {
+		this.setState({
+			isOpenToggleCategory: !this.state.isOpenToggleCategory
+		})
+	}
+
 	render() {
     const _token = Storage.getCookie('_token')
     const mock_auth = true
 		const { t, i18n } = this.props
-		const { isOpenMenu, isHeaderDark } = this.state
+		const { isOpenMenu, isHeaderDark, isOpenToggleCategory } = this.state
 		return (
 			<div className={"header " + ((isHeaderDark) ? 'header-dark' : '')}>
 				<nav>
@@ -152,38 +152,73 @@ class Header extends React.Component {
 						{/* <p> MOVIE WEB APP </p> */}
 					</div>
 					<ul className="menu">
+						<li className="menu-category">
+							<Dropdown isOpen={isOpenToggleCategory} toggle={this.toggleCategory}>
+								<DropdownToggle caret>
+									หมวดหมู่
+								</DropdownToggle>
+								<DropdownMenu>
+									<div className="row">
+										<div className="col-12 col-sm-4">
+											<Link route="category" params={{category: 'action'}}> หนังแอคชั่น </Link>
+											<Link route="category" params={{category: 'adventure'}}> ผจญภัย </Link>
+											<Link route="category" params={{category: 'animation'}}> แอนนิเมชั่น </Link>
+											<Link route="category" params={{category: 'horror'}}> หนังสยองขวัญ </Link>
+											<Link route="category" params={{category: 'romantic'}}> โรแมนติก </Link>
+											<Link route="category" params={{category: 'thriller'}}> ระทึกขวัญ </Link>
+										</div>
+										<div className="col-12 col-sm-4">
+											<Link route="category" params={{category: 'Biography'}}> ชีวิตจริง </Link>
+											<Link route="category" params={{category: 'crime'}}> อาชญากรรม </Link>
+											<Link route="category" params={{category: 'documentary'}}> สารคดี </Link>
+											<Link route="category" params={{category: 'musical'}}> เพลงดนตรี </Link>
+											<Link route="category" params={{category: 'sci-fi'}}> วิทยาศาสตร์ </Link>
+											<Link route="category" params={{category: 'war'}}> สงคราม </Link>
+										</div>
+										<div className="col-12 col-sm-4">
+											<Link route="category" params={{category: 'drama'}}> หนังดราม่า </Link>
+											<Link route="category" params={{category: 'family'}}> ครอบครัว </Link>
+											<Link route="category" params={{category: 'fantasy'}}> แฟนตาซี </Link>
+											<Link route="category" params={{category: 'mystery'}}> ลึกลับซ่อนเงื่อน </Link>
+											<Link route="category" params={{category: 'sport'}}> กีฬา </Link>
+											<Link route="category" params={{category: 'western'}}> คาวบอย </Link>
+										</div>
+									</div>
+								</DropdownMenu>
+							</Dropdown>
+						</li>
 						<li>
 							<Link route="root">
 								<a> หน้าแรก </a>
 							</Link>
 						</li>
 						<li>
-							<Link route="root">
+							<Link route="type" params={{type: 'cartoon'}}>
 								<a> การ์ตูน </a>
 							</Link>
 						</li>
 						<li>
-							<Link route="root">
+							<Link route="type" params={{type: 'หนังฝรั่ง'}}>
 								<a> หนังฝรั่ง </a>
 							</Link>
 						</li>
 						<li>
-							<Link route="root">
+							<Link route="type" params={{type: 'หนังไทย'}}>
 								<a> หนังไทย </a>
 							</Link>
 						</li>
 						<li>
-							<Link route="root">
+							<Link route="type" params={{type: 'หนังจีน'}}>
 								<a> หนังจีน </a>
 							</Link>
 						</li>
 						<li>
-							<Link route="root">
+							<Link route="type" params={{type: 'หนังญี่ปุ่น'}}>
 								<a> หนังญี่ปุ่น </a>
 							</Link>
 						</li>
 						<li>
-							<Link route="root">
+							<Link route="type" params={{type: 'หนังเกาหลี'}}>
 								<a> หนังเกาหลี </a>
 							</Link>
 						</li>

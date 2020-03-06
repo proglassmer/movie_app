@@ -54,7 +54,7 @@ class BannerSlider extends React.Component {
     };
 		return (
 			<div className="banner-slider">
-        <div> <img src="/images/example/slider/banner3.jpg" className="img-fluid" /> </div>
+        <div> <img src="/images/example/slider/banner5.jpg" className="img-fluid" /> </div>
         <div className="shadow-background"></div>
         {/* <Slider {...settings}>
           <div> <img src="/images/example/slider/banner1.jpg" className="img-fluid" /> </div>

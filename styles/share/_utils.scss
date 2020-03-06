@@ -52,3 +52,8 @@
 .border-l-white {
   border-left: 1px solid;
 }
+.divider {
+  margin: 45px 0px;
+  height: .5px;
+  background: -webkit-linear-gradient(left, rgb(38,38,38) 10%, rgb(145,131,116) 50%, rgb(38,38,38) 90%);
+}
