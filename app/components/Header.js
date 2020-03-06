@@ -145,8 +145,9 @@ class Header extends React.Component {
     const mock_auth = true
 		const { t, i18n } = this.props
 		const { isOpenMenu, isHeaderDark, isOpenToggleCategory } = this.state
+		const path = Router.router && Router.router.pathname
 		return (
-			<div className={"header " + ((isHeaderDark) ? 'header-dark' : '')}>
+			<div className={"header " + ((path == "/") ? 'for-home ' : 'for-other ') + ((isHeaderDark) ? 'header-dark' : '')}>
 				<nav>
 					<div className="logo">
 						{/* <p> MOVIE WEB APP </p> */}
@@ -193,32 +194,32 @@ class Header extends React.Component {
 							</Link>
 						</li>
 						<li>
-							<Link route="type" params={{type: 'cartoon'}}>
+							<Link route="category" params={{category: 'cartoon'}}>
 								<a> การ์ตูน </a>
 							</Link>
 						</li>
 						<li>
-							<Link route="type" params={{type: 'หนังฝรั่ง'}}>
+							<Link route="category" params={{category: 'หนังฝรั่ง'}}>
 								<a> หนังฝรั่ง </a>
 							</Link>
 						</li>
 						<li>
-							<Link route="type" params={{type: 'หนังไทย'}}>
+							<Link route="category" params={{category: 'หนังไทย'}}>
 								<a> หนังไทย </a>
 							</Link>
 						</li>
 						<li>
-							<Link route="type" params={{type: 'หนังจีน'}}>
+							<Link route="category" params={{category: 'หนังจีน'}}>
 								<a> หนังจีน </a>
 							</Link>
 						</li>
 						<li>
-							<Link route="type" params={{type: 'หนังญี่ปุ่น'}}>
+							<Link route="category" params={{category: 'หนังญี่ปุ่น'}}>
 								<a> หนังญี่ปุ่น </a>
 							</Link>
 						</li>
 						<li>
-							<Link route="type" params={{type: 'หนังเกาหลี'}}>
+							<Link route="category" params={{category: 'หนังเกาหลี'}}>
 								<a> หนังเกาหลี </a>
 							</Link>
 						</li>

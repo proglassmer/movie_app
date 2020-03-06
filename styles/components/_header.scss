@@ -6,7 +6,7 @@
   background: transparent;
   transition: background-color 0.75s ease;
   nav {
-    padding: 5px 15px;
+    padding: 15px 15px;
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, rgba(0, 0, 0, 0.9)), color-stop(10%, rgba(0, 0, 0, 0)));
     background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.9) 10%, rgba(0, 0, 0, 0));
     background-image: -moz- oldlinear-gradient(top, rgba(0, 0, 0, 0.9) 10%, rgba(0, 0, 0, 0));
@@ -34,7 +34,7 @@
         color: white;
         font-size: 1rem;
         // padding: 20px 20px;
-        padding: 5px 20px;
+        padding: 5px 25px;
         display: inline-block;
         transition: all 0.5s ease 0s;
         &:hover {
